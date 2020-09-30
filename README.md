@@ -1,6 +1,8 @@
 # snapchat-election-ad-data-predict-impressions
 ## Background Information
-In this project, I am looking at __Spend__, __Age Range__, and __Run Time__. 
+In this project, I looked at Political Advertisement Data from [Snapchat](https://www.snap.com/en-US/political-ads/) and focused on the data from the United States. I wanted to determine what factors might affect the number of impressions an advertisement might receive on Snapchat. I looked at __Spend__, __Age Range__, and __Run Time__. I analyzed data from 2018 and 2020 because 2018 was a year of midterm elections and 2020 is the presidential election. I omitted 2019 because it was an off-year in terms of elections. 
+
+I thought __Spend__ would be ideal to consider because, as paid advertisements go, it would make sense that the the number of impressions would correspond to the amouont spent on running ads. I was interested in considering the __Age Range__ given that Snapchat tends to cater towards a younger audience, but not all Snapchat users can vote (e.g. those under 18 years old) in the United States. I also wondered if the __Run Time__ would affect the number of impressions, or if it would be as strong of a factor as, say, __Spend__ would be in predicting impressions. 
 
 __Spend__ was not filtered or manipulated in any way. It refers to the amount (in USD) an advertiser spends on an advertisement. 
 
@@ -14,27 +16,36 @@ How do the average amount advertisers spend on an advertisement (__Spend__), the
 ## Data Sources
 The [Snapchat Political Ads Library](https://www.snap.com/en-US/political-ads/) provides open-source data for download. The data for the years 2018, 2019, and 2020 can be downloaded here (although I only focused on 2018 and 2020). 
 
-## Data Analysis/Metrics 
+[Instructions for Filtering Data](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Instructions%20for%20Filtering%20Data.docx) provides step-by-step instructions on how I filtered and cleaned the data.
 
-### Correlation
-#### Correlation: 2018
+[Snapchat Political Ads Raw Data 2018](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Snapchat%20Political%20Ads%20Raw%20Data%202018.xlsx) shows the 2018 raw data downloaded from Snapchat's website. 
+
+[Snapchat Political Ads Raw Data 2020](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Snapchat%20Political%20Ads%20Raw%20Data%202020.xlsx) shows the 2020 raw data downloaded from Snapchat's website. 
+
+[Snapchat Political Ads Filtered Data 2018](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Snapchat%20Political%20Ads%20Filtered%20Data%202018.xlsx) shows the 2018 data after I did some data-cleaning and filtered the metrics I wanted. 
+
+[Snapchat Political Ads Filtered Data 2020](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Snapchat%20Political%20Ads%20Filtered%20Data%202020.xlsx) shows the 2018 data after I did some data-cleaning and filtered the metrics I wanted. 
+
+
+## Data Analysis/Metrics 
+For both 2018 and 2020 data, I conducted correlation analyses for the three dependent variables (__Spend__, __Age Range__, and __Run Time__). I then conducted a multiple linear regression with these three dependent variables and __Impressions__ as the independent variable. 
+
+### Correlation: 2018
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Correlation%20-%202018%20Snapchat%20Data.jpg)
 
-#### Correlation: 2020
+### Correlation: 2020
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Correlation%20-%202020%20Snapchat%20Data.jpg)
 
-#### Multiple Linear Regressions
-##### Multiple Linear Regressions: 2018
+### Multiple Linear Regressions: 2018
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Multiple%20Linear%20Regression%20-%202018%20Snapchat%20Data.jpg)
 
-##### Multiple Linear Regressions: 2020
+### Multiple Linear Regressions: 2020
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Multiple%20Linear%20Regression%20-%202020%20Snapchat%20Data.jpg) 
-
-#### Predicting Impressions 
-##### Predicting Impressions: 2018
+ 
+### Predicting Impressions: 2018
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Predicting%20Impressions%20-%202018%20Snapchat%20Data.jpg)
 
-##### Predicting Impressions: 2020
+### Predicting Impressions: 2020
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Predicting%20Impressions%20-%202020%20Snapchat%20Data.jpg)
 
 ## Summary
