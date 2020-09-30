@@ -1,15 +1,18 @@
 # snapchat-election-ad-data-predict-impressions
 ## Background Information
-In this project, I am looking at __Spend__, __Age Range__, and __Run Time__. Spend refers to the amount (in USD) spent by the advertiser over the course of the campaign (from the start to the end date). Age Range refers to the ages that are being targeted in the advertisement. Run Time refers to how long the ad was run on the platform (from start to end date). 
+In this project, I am looking at __Spend__, __Age Range__, and __Run Time__. 
 
-Spend was not filtered or manipulated in any way. 
-Age Range was categorized on a scale of 0-2 to simplify the data. If an age was not specified, it received a 0. If the age range was under 18, it received a 1 and if it was 18+, it received a 2. If the age range was mixed/spanned both under 18 and 18+ ages, then it received a 1.5. 
-Run Time is calculated by subtrating the Start Date from the End Date and its unit is days. Some advertisers put their end date under the Start Date category and their start date under the End Date category, so I reversed the calculation to still obtain a positive value. 
+__Spend__ was not filtered or manipulated in any way. It refers to the amount (in USD) an advertiser spends on an advertisement. 
+
+__Age Range__ refers to the target age range, if specified, for an advertisement. The data was categorized on a scale of 0-2 to simplify the values. If an age was not specified, it received a 0. If the age range was under 18, it received a 1 and if it was 18+, it received a 2. If the age range was mixed/spanned both under 18 and 18+ ages, then it received a 1.5. 
+
+__Run Time__ is how long an advertisement ran for on Snapchat. It is calculated by subtrating the Start Date from the End Date and its unit is days. Some advertisers put their end date under the Start Date category and their start date under the End Date category, so I reversed the calculation to still obtain a positive value. 
 
 ### Business Question
+How do the average amount advertisers spend on an advertisement (__Spend__), the target age range for an advertisement (__Age Range__), and the amount of time for which an advertisement runs (__Run Time__) affect the number of impressions an advertisement has on Snapchat?
 
 ## Data Sources
-[Snapchat Political Ads Library] (https://www.snap.com/en-US/political-ads/) provides open-source data for download. The data for the years 2018, 2019, and 2020 can be downloaded here (although I only focused on 2018 and 2020). 
+The [Snapchat Political Ads Library](https://www.snap.com/en-US/political-ads/) provides open-source data for download. The data for the years 2018, 2019, and 2020 can be downloaded here (although I only focused on 2018 and 2020). 
 
 ## Data Analysis/Metrics 
 
