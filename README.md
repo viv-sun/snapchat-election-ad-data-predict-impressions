@@ -2,6 +2,8 @@
 ## Background Information
 In this project, I am looking at __Spend__, __Age Range__, and __Run Time__. Spend refers to the amount (in USD) spent by the advertiser over the course of the campaign (from the start to the end date). Age Range refers to the ages that are being targeted in the advertisement. Run Time refers to how long the ad was run on the platform (from start to end date). 
 
+Age Range was categorized on a scale of 0-2 to simplify the data. If an age was not specified, it received a 0. If the age range was under 18, it received a 1 and if it was 18+, it received a 2. If the age range was mixed/spanned both under 18 and 18+ ages, then it received a 1.5. 
+
 ### Business Question
 
 ## Data Sources
