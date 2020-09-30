@@ -62,13 +62,15 @@ The standard error is 4251059.42 and shows how spread out our data points are fo
 
 The coefficients and the intercept can be used to create our final formula to predict impressions. Please scroll down to see the formula. 
 
-The p-values are really high for all three of the dependent variables, and are highest for the __Spend__ and __Run Time__. This was interesting since the smallest p-value was for the __Age Range__ variable, which I thought might be the one that has the highest p-value because of my simplifying the data. Still, the p-values for these three are all too high and mean that I cannot use these three variables for my final formula. This likely explains why the R squared is so low - I cannot use the three variables, so if the formula is just the intercept (y=m, m being a number and not a variable), it can't be very accurate. 
+The p-values are really high for all three of the dependent variables, and are highest for the __Spend__ and __Run Time__. This was interesting since the smallest p-value was for the __Age Range__ variable, which I thought might be the one that has the highest p-value because of my simplifying the data. I gave the same value of 1.5 to a 17-19 age range and to a 17-40 age range; I did not weigh the ages involved, but the p-value was still the lowest out of the three variables. Still, the p-values for these three are all too high and mean that I cannot use these three variables for my final formula. This likely explains why the R squared is so low - I cannot use the three variables, so if the formula is just the intercept (y=m, m being a number and not a variable), it can't be very accurate. 
 
 The F significance is 0.923, which means that the variables are not likely to be great contributors in terms of predicting impressions.  
 
  
 ### Predicting Impressions: 2018
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Predicting%20Impressions%20-%202018%20Snapchat%20Data.jpg) 
+
+In this formula, we can see that as the age range increases, that decreases the number of impressions. However, as the __Spend__ and the __Run Time__ increase, the number of impressions increase as well. We can tell from the higher coefficient for  __Run Time__  that __Run Time__ has a larger effect on the number of impressions than the __Spend__ variable.
 
 ### Predicting Impressions: 2020
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Predicting%20Impressions%20-%202020%20Snapchat%20Data.jpg)
@@ -77,4 +79,10 @@ As mentioned in the multiple linear regressions section for 2020, the formula fo
 
 ## Summary
 
-We have to keep in mind that the 2018 data is incomplete - it starts in June. The 2020 data is also incomplete, as 2020 is not yet over (as of the time of writing this summary in September 2020). 
+We have to keep in mind that the 2018 data is incomplete - it starts in June. The 2020 data is also incomplete, as 2020 is not yet over (as of the time of writing this summary in September 2020). This may have an effect on how accurate the data is for predicting the number of impressions. 
+
+Something to keep in mind as well are potential reasons for why the 2020 formula to predict impressions is wonky. Does it really mean that the amount of money spent on an ad, the amount of time an ad runs for, and the target age range of an ad have no bearing on the impressions an ad gets? It goes against the inherent nature of paid advertising: that the more you pay for an ad, the mroe impressions you (should) receive. This leads me to ask questions about each of the variables. 
+
+For example, for the __Run Time__ variable in 2020, could the ads have run during unopportune times, like at 3am or during the workday/classes when fewer people are on Snapchat? Did they stretch over a period of time during which Snapchat saw a decrease in users or daily usage? Were they targeting the right geographic locations? This could then tie into the __Spend__ variable - if advertisers are spending money but not targeting the right people in the right locations or during the right times, then it would be a waste of money and would not affect impressions. 
+
+Ultimately, more research needs to be done to consider the other extenuating factors for 2020 - things like targeted geographic location, how long users looked at the ads, the age ranges (consider a 17-19 age range and a 17-40 age range, which both received the same score of 1.5). Would the fact that 2020 is a presidential election year have any bearing on the results?
