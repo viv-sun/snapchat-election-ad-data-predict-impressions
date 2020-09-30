@@ -33,20 +33,47 @@ For both 2018 and 2020 data, I conducted correlation analyses for the three depe
 ### Correlation: 2018
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Correlation%20-%202018%20Snapchat%20Data.jpg)
 
+The correlations between these three variables are fairly low/close to zero, which means that they likely do not have a huge influence on each other (which is ideal). 
+
 ### Correlation: 2020
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Correlation%20-%202020%20Snapchat%20Data.jpg)
+
+The correlations between these three variables are fairly low/close to zero, which means that they likely do not have a huge influence on each other (which is ideal). 
 
 ### Multiple Linear Regressions: 2018
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Multiple%20Linear%20Regression%20-%202018%20Snapchat%20Data.jpg)
 
+The R squared value here is 0.803, which means that the line (our final formula, created with the intercept and coefficients noted here) is a good fit for about 80.3% of the data. 
+
+The standard error is 356684.84, and shows how spread out our data points are for predicting impressions. This means that the data is really spread out. 
+
+The coefficients and the intercept can be used to create our final formula to predict impressions. Please scroll down to see the formula. 
+
+The p-values tell us if the varaibles are significant in predicting the independent variable (the impressions). Here, they are all extremely small, less than 0.05, which mean that there is likely a relationship between our dependent variable(s) and our independent variable. This means that the __Spend__, __Age Range__, and __Run Time__ all likely have some effect on predicting the number of impressions. 
+
+The F significance shows the probability that none of these variables matter for the final formula to predict impressions. The lower it is, the more it means that our variables might contribute something to the final formula. This F significance is extremely low (7.4 x 10^-154), which is great - it means that our variables are likely great contributors and have some influence for predicting impressions. 
+
 ### Multiple Linear Regressions: 2020
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Multiple%20Linear%20Regression%20-%202020%20Snapchat%20Data.jpg) 
+
+The R squared value here is 0.0007, which means that the line (our final formula, created with the intercept and coefficients noted here) is not a good fit for our data at all. This is really concerning since it's an extremely low R squared value. 
+
+The standard error is 4251059.42 and shows how spread out our data points are for predicting impressions. This means that the data is really spread out. 
+
+The coefficients and the intercept can be used to create our final formula to predict impressions. Please scroll down to see the formula. 
+
+The p-values are really high for all three of the dependent variables, and are highest for the __Spend__ and __Run Time__. This was interesting since the smallest p-value was for the __Age Range__ variable, which I thought might be the one that has the highest p-value because of my simplifying the data. Still, the p-values for these three are all too high and mean that I cannot use these three variables for my final formula. This likely explains why the R squared is so low - I cannot use the three variables, so if the formula is just the intercept (y=m, m being a number and not a variable), it can't be very accurate. 
+
+The F significance is 0.923, which means that the variables are not likely to be great contributors in terms of predicting impressions.  
+
  
 ### Predicting Impressions: 2018
-![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Predicting%20Impressions%20-%202018%20Snapchat%20Data.jpg)
+![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Predicting%20Impressions%20-%202018%20Snapchat%20Data.jpg) 
 
 ### Predicting Impressions: 2020
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Predicting%20Impressions%20-%202020%20Snapchat%20Data.jpg)
+
+As mentioned in the multiple linear regressions section for 2020, the formula for this only included the intercept because the p-values of the variables were extremely high and meant that I had to omit these variables from the equation. This final formula is just a straight line, which likely explains why the R squared is so low; it is not a good representation nor predictor for impressions for 2020. 
 
 ## Summary
 
