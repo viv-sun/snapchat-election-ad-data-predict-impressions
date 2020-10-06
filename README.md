@@ -31,14 +31,14 @@ The [Snapchat Political Ads Library](https://www.snap.com/en-US/political-ads/) 
 For both data sets, I conducted correlation analyses for the three dependent variables (__Spend__, __Age Range__, and __Run Time__). I then conducted a multiple linear regression with these three dependent variables and __Impressions__ as the independent variable. 
 
 ### Charts: Advertisement Run Time vs Impressions (2018)
-![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Advertisement%20Run%20Times%20and%20Impressions%20(2018)%20chart.jpg) 
+![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Advertisement%20Run%20Times%20and%20Impressions%20(2018).jpg) 
 
-I compared only one variable (the __Run Time__) against the impressions data from 2018. The R squared is really low, implying that perhaps it is not the line of best fit. This may be due to the outliers, though. Perhaps the __Run Time__ may not have as large of an effect on impressions as I would have assumed... 
+I compared only one variable (the __Run Time__) against the impressions data from 2018. The R squared is really low, implying that perhaps it is not the line of best fit. This may be due to the outliers, though. Perhaps the __Run Time__ may not have as large of an effect on impressions as I would have assumed. 
 
 ### Charts: Advertisement Run Time vs Impressions (2020)
-![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Advertisement%20Run%20Times%20and%20Impressions%20(2020)%20chart.jpg)
+![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Advertisement%20Run%20Times%20and%20Impressions%20(2020).jpg)
 
-I compared only one variable (the __Run Time__) against the impressions data from 2020. The R squared is really low, implying that perhaps it is not the line of best fit. This may be due to the outliers, though. Perhaps the __Run Time__ may not have as large of an effect on impressions as I would have assumed... 
+I compared only one variable (the __Run Time__) against the impressions data from 2020. The R squared is really low, implying that perhaps it is not the line of best fit. This may be due to the outliers, though. Perhaps the __Run Time__ may not have as large of an effect on impressions as I would have assumed. The data seems rather spread out. 
 
 ### Correlation: 2018
 ![alt text](https://github.com/viv-sun/snapchat-election-ad-data-predict-impressions/blob/master/Correlation%20-%202018%20Snapchat%20Data.jpg)
